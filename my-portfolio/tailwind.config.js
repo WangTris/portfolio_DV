@@ -24,11 +24,12 @@ module.exports = {
         accent: "#8E8E8F",
         text: "#1D1D1F",
       },
-      // backgroundImage: {
-      //   site: "url('./assets/site-bg.jpg')",
-      //   about: "url('./assets/about.png')",
-      //   services: "url('./assets/services.png')",
-      // },
+      backgroundImage: {
+        // site: "url('./assets/site-bg.jpg')",
+        // about: "url('./assets/about.png')",
+        // services: "url('./assets/services.png')",
+        about2: "url('./assets/dieuvan.ipg')",
+      },
     },
   },
   plugins: [],

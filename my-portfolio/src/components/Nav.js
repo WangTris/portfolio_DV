@@ -13,14 +13,14 @@ const Nav = () => {
     <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         {/* Nav inner */}
-        <div className="w-full bg-[#8E8E8F]/75 h-[86px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-white">
+        <div className="w-full max-w-[560px] border-2 border-text bg-accent/15 h-[86px] backdrop-blur-2xl rounded-full mx-auto px-6 flex justify-between items-center text-text">
           <Link
             to="home"
             activeClass="active"
             smooth={true}
             spy={true}
             offset={-200}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <BiHomeAlt />
           </Link>
@@ -29,7 +29,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <BiUser />
           </Link>
@@ -38,7 +38,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <BsBriefcase />
           </Link>
@@ -47,7 +47,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <PiCertificate />
           </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <GoProject />
           </Link>
@@ -65,7 +65,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[20px] h-[50px] flex items-center"
+            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <BsEnvelope />
           </Link>

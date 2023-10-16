@@ -1,8 +1,8 @@
 import React from "react";
-// images
+//images
+import dieuvan from "../assets/dieuvan.jpg";
 // icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import { SiZalo, SiGmail } from "react-icons/si";
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // motion
@@ -12,55 +12,97 @@ import { fadeIn } from "../variants";
 
 const Banner = () => {
   return (
-    <section className="section" id="home">
+    <section
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      id="home"
+    >
       <div className="container mx-auto">
-        {/* text */}
-        <div>
-          <h1 className="text-text">
-            TRAN QUANG <span>TRI</span>
-          </h1>
-          <div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
-            <span className="text-text mr-4">I'm a </span>
-            <TypeAnimation
-              sequence={[
-                `Front-end Developer`,
-                2000,
-                `Back-end Developer`,
-                2000,
-                `Full-stack Developer`,
-                2000,
-              ]}
-              wrapper="span"
-              className="text-accent"
-              repeat={Infinity}
-            />
+        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+          {/* text */}
+          <div className="flex-1 text-center font-secondary lg:text-left">
+            <motion.h1
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-text text-[45px] font-bold leading-[1] lg:text-[90px]"
+            >
+              TRAN QUANG <span>TRI</span>
+            </motion.h1>
+            <motion.div
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+            >
+              <span className="text-text mr-4">I'm a</span>
+              <TypeAnimation
+                sequence={[
+                  `Front-end Developer`,
+                  2000,
+                  `Back-end Developer`,
+                  2000,
+                  `Full-stack Developer`,
+                  2000,
+                ]}
+                wrapper="span"
+                className="text-accent"
+                repeat={Infinity}
+              />
+            </motion.div>
+            <motion.p
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-8 max-w-lg mx-auto lg:mx-0"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              laudantium veniam reprehenderit molestiae numquam architecto sed
+              beatae blanditiis cupiditate odit.
+            </motion.p>
+            {/* contact me */}
+            <motion.div
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex max-w-max items-center mb-12 mx-auto lg:mx-0"
+            >
+              <button to="contact" className="btn btn-lg">
+                Contact me
+              </button>
+            </motion.div>
+            {/* socials */}
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex text-text text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+            >
+              <a href="#">
+                <FaGithub />
+              </a>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+              <a href="#">
+                <FaFacebook />
+              </a>
+            </motion.div>
           </div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-            laudantium veniam reprehenderit molestiae numquam architecto sed
-            beatae blanditiis cupiditate odit.
-          </p>
-          {/* contact me */}
-          <div>
-            <button to="contact" className="btn btn-lg">
-              Contact me
-            </button>
-          </div>
-          {/* socials */}
-          <div>
-            <a href="#">
-              <FaGithub />
-            </a>
-            <a href="#">
-              <FaLinkedin />
-            </a>
-            <a href="#">
-              <FaGithub />
-            </a>
-          </div>
+          {/* image */}
+          <motion.div
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            className="hidden lg:flex flex-1 max-w-sm"
+          >
+            <img src={dieuvan} alt="" />
+          </motion.div>
         </div>
-        {/* image */}
-        <div>image</div>
       </div>
     </section>
   );
