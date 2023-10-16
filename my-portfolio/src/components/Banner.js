@@ -25,7 +25,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-text text-[45px] font-bold leading-[1] lg:text-[90px]"
+              className="text-text text-[45px] font-bold leading-[1] lg:text-[5rem]"
             >
               TRAN QUANG <span>TRI</span>
             </motion.h1>
@@ -56,7 +56,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-8 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
             >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
               laudantium veniam reprehenderit molestiae numquam architecto sed
@@ -82,23 +82,29 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-text text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a href="https://github.com/WangTris" target="blank">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/quang-tr%C3%AD-tr%E1%BA%A7n-21740020a/"
+                target="blank"
+              >
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a
+                href="https://www.facebook.com/tranquangtri0412"
+                target="blank"
+              >
                 <FaFacebook />
               </a>
             </motion.div>
           </div>
           {/* image */}
           <motion.div
-            variants={fadeIn("up", 0.5)}
+            variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-sm"
+            className="hidden lg:flex flex-1 max-w-[350px]"
           >
             <img src={dieuvan} alt="" />
           </motion.div>

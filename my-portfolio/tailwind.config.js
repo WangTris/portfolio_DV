@@ -28,7 +28,10 @@ module.exports = {
         // site: "url('./assets/site-bg.jpg')",
         // about: "url('./assets/about.png')",
         // services: "url('./assets/services.png')",
-        about2: "url('./assets/dieuvan.ipg')",
+        // about2: "url('./assets/dieuvan.ipg')",
+      },
+      animation: {
+        "spin-slow": "spin 4s linear infinite",
       },
     },
   },
