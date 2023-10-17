@@ -71,6 +71,6 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#1d1d1f] to-[#ffffff] font-bold font-secondary hover:from-[#ffffff] hover:to-[#1d1d1f];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-9 lg:py-24 lg:h-screen flex items-center;
   }
 }

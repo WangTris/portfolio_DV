@@ -8,18 +8,18 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   return (
-    <section className="section" id="about">
+    <section className="section flex flex-1 flex-col" id="about">
+      {/* title */}
+      <motion.h2
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-[3rem] lg:text-[4rem] mb-20 items-center font-primary font-bold uppercase"
+      >
+        About <span className="text-accent">me</span>
+      </motion.h2>
       <div className="container mx-auto flex justify-center items-center flex-col ">
-        {/* title */}
-        <motion.h2
-          variants={fadeIn("up", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-[3rem] lg:text-[4rem] mb-20 items-center font-primary font-bold uppercase"
-        >
-          About <span className="text-accent">me</span>
-        </motion.h2>
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* image */}
           <motion.div
