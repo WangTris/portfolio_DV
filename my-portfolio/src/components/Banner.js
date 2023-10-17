@@ -25,7 +25,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-text text-[45px] font-bold leading-[1] lg:text-[5rem]"
+              className="text-text text-[3rem] font-bold leading-[1] lg:text-[5rem]"
             >
               TRAN QUANG <span>TRI</span>
             </motion.h1>
@@ -68,7 +68,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max items-center mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max items-center mb-4 lg:mb-12 mx-auto lg:mx-0"
             >
               <button to="contact" className="btn btn-lg">
                 Contact me

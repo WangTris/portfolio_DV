@@ -16,7 +16,7 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-[4rem] mb-20 items-center font-primary font-bold uppercase"
+          className="text-[3rem] lg:text-[4rem] mb-20 items-center font-primary font-bold uppercase"
         >
           About <span className="text-accent">me</span>
         </motion.h2>
