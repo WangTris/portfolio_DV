@@ -3,7 +3,7 @@ import React from "react";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsBriefcase, BsEnvelope } from "react-icons/bs";
 import { AiOutlineProject } from "react-icons/ai";
-import { PiCertificate } from "react-icons/pi";
+// import { PiCertificate } from "react-icons/pi";
 
 // link
 import { Link } from "react-scroll";
@@ -13,7 +13,7 @@ const Nav = () => {
     <nav className="fixed bottom-2 lg:bottom-6 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         {/* Nav inner */}
-        <div className="w-full max-w-[560px] border-2 border-text bg-accent/15 h-[86px] backdrop-blur-2xl rounded-full mx-auto px-6 flex justify-between items-center text-text">
+        <div className="w-full max-w-[460px] border-2 border-text bg-accent/15 h-[86px] backdrop-blur-2xl rounded-full mx-auto px-5 flex justify-between items-center text-text">
           <Link
             to="home"
             activeClass="active"
@@ -42,7 +42,7 @@ const Nav = () => {
           >
             <BsBriefcase />
           </Link>
-          <Link
+          {/* <Link
             to="certificate"
             activeClass="active"
             smooth={true}
@@ -50,7 +50,7 @@ const Nav = () => {
             className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
           >
             <PiCertificate />
-          </Link>
+          </Link> */}
           <Link
             to="projects"
             activeClass="active"

@@ -17,7 +17,7 @@ function App() {
       <Nav />
       <About />
       <Work />
-      <Certi />
+      {/* <Certi /> */}
       <Projs />
       <Contact />
       {/* <div className="h-[4000px]"></div> */}

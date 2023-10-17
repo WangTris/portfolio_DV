@@ -9,9 +9,43 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 // constants
 import workData from "../constants.json";
+// carousel
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+// icons
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaSass,
+  FaJava,
+  FaFigma,
+} from "react-icons/fa";
+import { SiTailwindcss, SiJavascript, SiMongodb } from "react-icons/si";
 
 const Work = () => {
   const [active, setActive] = useState(0);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+    },
+  };
+
   return (
     <section className="section flex flex-1 flex-col" id="work">
       {/* title */}
@@ -26,7 +60,7 @@ const Work = () => {
       </motion.h2>
       <div className="container mx-auto">
         {/* desc */}
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row m-0">
           <div className="flex flex-col">
             {workData.experiences.map((item, index) => (
               <motion.div
@@ -77,6 +111,60 @@ const Work = () => {
             ))}
           </motion.div>
         </div>
+        {/* SKills */}
+        <hr class="h-px my-6 bg-gray-400 border-0 "></hr>
+        <Carousel
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={[
+            "superLargeDesktop",
+            "desktop",
+            "tablet",
+            "mobile",
+          ]}
+          itemClass="carousel-item-padding-40-px flex justify-center items-center"
+          className="mx-auto text-text font-secondary font-semibold"
+        >
+          <div className="flex flex-col items-center">
+            <FaReact className="text-[80px] mb-2" />
+            <h3 className="text-3xl">React</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaNodeJs className="text-[80px] mb-2" />
+            <h3 className="text-3xl">NodeJS</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaHtml5 className="text-[80px] mb-2" />
+            <h3 className="text-3xl">HTML5</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaSass className="text-[80px] mb-2" />
+            <h3 className="text-3xl">SASS</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaFigma className="text-[80px] mb-2" />
+            <h3 className="text-3xl">Figma</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiJavascript className="text-[80px] mb-2" />
+            <h3 className="text-3xl">Javascript</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiTailwindcss className="text-[80px] mb-2" />
+            <h3 className="text-3xl">Tailwind</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiMongodb className="text-[80px] mb-2" />
+            <h3 className="text-3xl">MongoDB</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaJava className="text-[80px] mb-2" />
+            <h3 className="text-3xl">Java</h3>
+          </div>
+        </Carousel>
       </div>
     </section>
   );
