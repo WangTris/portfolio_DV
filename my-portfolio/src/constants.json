@@ -1,16 +1,6 @@
 {
   "experiences": [
     {
-      "company": "AIoT Lab VN",
-      "link": "https://aiotlab.vn/",
-      "position": "member",
-      "duration": "April 2023 - present",
-      "decs": [
-        "I'm in charge of devoloping healthcare projects using AI and IoT technologies.",
-        "Studying AI, IoT, machine learning, deep learning for chasing better future"
-      ]
-    },
-    {
       "company": "Freelancer",
       "link": "http://pmt.vn/",
       "position": "Full-stack developer",
@@ -19,6 +9,16 @@
         "Build a website for a company",
         "Using ReactJS, Tailwind, NodeJS, Figma",
         "Learn how to work with a team and individual"
+      ]
+    },
+    {
+      "company": "AIoT Lab VN",
+      "link": "https://aiotlab.vn/",
+      "position": "member",
+      "duration": "April 2023 - present",
+      "decs": [
+        "I'm in charge of devoloping healthcare projects using AI and IoT technologies.",
+        "Studying AI, IoT, machine learning, deep learning for chasing better future"
       ]
     },
     {
