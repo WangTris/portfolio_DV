@@ -112,7 +112,7 @@ const Work = () => {
           </motion.div>
         </div>
         {/* SKills */}
-        <hr class="h-px my-6 bg-gray-400 border-0 "></hr>
+        <hr class="h-px my-8 bg-gray-400 border-0 "></hr>
         <Carousel
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.

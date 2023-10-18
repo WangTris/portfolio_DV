@@ -5,7 +5,7 @@ import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Work from "./components/Work";
-import Certi from "./components/Certi";
+// import Certi from "./components/Certi";
 import Projs from "./components/Projs";
 import Contact from "./components/Contact";
 
