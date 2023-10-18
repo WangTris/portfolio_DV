@@ -13,14 +13,14 @@ const Contact = () => {
     <section className="lg:section flex-1 flex-col py-8" id="contact">
       {/* projects */}
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col justify-center items-center lg:flex-row">
           {/* text */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="w-[50%] flex flex-col"
+            className="w-[100%] lg:w-[50%] flex flex-col"
           >
             <h4 className="text-2xl font-primary uppercase text-accent font-medium mb-2 tracking-wide">
               Contact
@@ -95,7 +95,7 @@ const Contact = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             action=""
-            className="w-[50%] flex-1 border border-text rounded-2xl flex flex-col pb-[4.5rem] p-6 items-start"
+            className="w-[100%] lg:w-[50%] flex-1 border border-text rounded-2xl flex flex-col pb-[4.5rem] p-6 items-start"
           >
             <input
               type="text"
