@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <section className="lg:section flex-1 flex-col py-8" id="contact">
+    <section className="lg:section flex-1 flex-col" id="contact">
       {/* projects */}
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center lg:flex-row">
@@ -46,7 +46,7 @@ const Contact = () => {
               </span>
               <div>
                 <h3 className="font-semibold font-tertiary">Phone</h3>
-                <a href="tel:+84839682239">(+84)83 968 2239</a>
+                <a href="tel:+84839682239">(+84) 83 968 2239</a>
               </div>
             </div>
             <div className="flex flex-row items-center gap-6 mb-4">
@@ -100,12 +100,12 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Your name"
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
             />
             <input
               type="text"
               placeholder="Your email"
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
             />
             <textarea
               placeholder="Your message"
