@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 // icons
 import { TbMapPin2 } from "react-icons/tb";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
@@ -7,8 +7,43 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+// email
+import emailjs from "@emailjs/browser";
+// sweetalert2
+import SweetAlert2 from "react-sweetalert2";
 
 const Contact = () => {
+  // SweetAlert2
+  const [swalProps, setSwalProps] = useState({});
+
+  // Send email
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_y52n5sd",
+        "template_2g2y6i6",
+        form.current,
+        "tOaOobCfLPs96OjAz"
+      )
+      .then(
+        (result) => {
+          console.log("Send email successfully!");
+          setSwalProps({
+            show: true,
+            title: "Success!",
+            text: "Thank you for your message!",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="section flex flex-1 flex-col" id="contact">
       {/* projects */}
@@ -95,23 +130,34 @@ const Contact = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             action=""
+            ref={form}
+            onSubmit={sendEmail}
             className="w-[100%] lg:w-[50%] flex-1 border border-text rounded-2xl flex flex-col pb-[4.5rem] p-6 items-start"
           >
             <input
               type="text"
+              name="user_name"
               placeholder="Your name"
               className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              required
             />
             <input
-              type="text"
+              type="email"
+              name="user_email"
               placeholder="Your email"
               className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              required
             />
             <textarea
+              name="message"
               placeholder="Your message"
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-text focus:border-text transition-all resize-none mb-12"
+              required
             ></textarea>
-            <button className="btn btn-lg">Send message</button>
+            <button className="btn btn-lg" type="submit" value="Send">
+              Send message
+            </button>
+            <SweetAlert2 {...swalProps} />
           </motion.form>
         </div>
       </div>
