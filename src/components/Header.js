@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   const onButtonClick = () => {
-    const pdfUrl = "../assets/resume/resume.pdf";
+    const pdfUrl = "/resume/resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "resume_TranQuangTri.pdf"; // specify the filename

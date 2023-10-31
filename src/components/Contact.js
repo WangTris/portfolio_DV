@@ -136,14 +136,14 @@ const Contact = () => {
           >
             <input
               type="text"
-              name="user_name"
+              name="from_name"
               placeholder="Your name"
               className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
               required
             />
             <input
               type="email"
-              name="user_email"
+              name="email_id"
               placeholder="Your email"
               className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
               required
