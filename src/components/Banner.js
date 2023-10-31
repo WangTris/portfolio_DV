@@ -62,13 +62,13 @@ const Banner = () => {
               className="mb-4 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
             >
               Hello, and welcome to my online portfolio. My name is
-              <b> Tran Quang Tri</b>, and I'm a final-year student at
-              <b> International University (VNU-HCMC)</b> majoring in
-              <b> Information Technology</b>. I've created this platform to
-              showcase my work and share my journey as I continue to grow and
-              learn in my field of study. Please feel free to explore the
-              various projects, and don't hesitate to reach out if you have any
-              questions or if you'd like to collaborate on a project.
+              <b> Tran Quang Tri</b>.
+              <br />
+              I've created this platform to showcase my work and share my
+              journey as I continue to grow and learn in my field of study.
+              Please feel free to explore the various projects, and don't
+              hesitate to reach out if you have any questions or if you'd like
+              to collaborate on a project.
             </motion.p>
             {/* contact me */}
             <motion.div

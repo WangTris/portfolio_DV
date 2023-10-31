@@ -37,18 +37,31 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex-1 mb-8 max-w-2xl mx-auto lg:mx-0 text-center font-secondary text-[20px]"
+            className="flex-1 mb-8 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
           >
             {/* text */}
-            <h3 className="text-gradient text-[2rem] leading-[1] lg:text-[3rem]">
-              Luv U To The Moon And Back
+            <h3 className="text-gradient text-[2rem] leading-[1] lg:text-[2rem]">
+              There are no short cuts to any place worth going
             </h3>
             <p className="text-text mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              autem deleniti voluptatibus praesentium quam et! Autem nemo
-              temporibus totam maiores rem dolorem ipsum id pariatur dolor
-              placeat soluta odio quae distinctio deserunt esse, nobis
-              repudiandae, corporis laborum animi ut non?
+              Greetings! I'm <b> Tran Quang Tri</b>, and I'm a final-year
+              student at
+              <b> International University (VNU-HCMC)</b> majoring in
+              <b> Information Technology</b>. Here's a little glimpse into who I
+              am:
+              <ul>
+                <li>
+                  <b>- Aspirations:</b> My ultimate goal is to become a
+                  proficient leader. I'm driven by the prospect of working on
+                  both front-end and back-end technologies. Moreover, I also
+                  have my sights set on higher education pursuing advanced
+                  studies in the field of Information Technology.
+                </li>
+              </ul>
+              <b>
+                The journey is just as important as the destination, and I'm
+                excited to see where it takes me.
+              </b>
             </p>
           </motion.div>
         </div>
