@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <section className="lg:section flex-1 flex-col" id="contact">
+    <section className="section flex flex-1 flex-col" id="contact">
       {/* projects */}
       <div className="container mx-auto">
         <div className="flex flex-col justify-center items-center lg:flex-row">
