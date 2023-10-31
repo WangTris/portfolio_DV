@@ -1,6 +1,6 @@
 import React from "react";
 //images
-import dieuvan2 from "../assets/dieuvan2.png";
+import dieuvan2 from "../assets/img/dieuvan2.png";
 // motion
 import { motion } from "framer-motion";
 // variants

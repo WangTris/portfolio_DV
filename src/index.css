@@ -64,6 +64,9 @@
   .btn-lg {
     @apply h-[56px] px-10 text-base;
   }
+  .btn-xl {
+    @apply h-[64px] px-12 text-base;
+  }
   .btn-link {
     @apply text-base;
   }

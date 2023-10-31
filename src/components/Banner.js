@@ -1,6 +1,7 @@
 import React from "react";
 //images
-import dieuvan from "../assets/dieuvan.jpg";
+import home from "../assets/img/home.JPG";
+//import dieuvan from "../assets/dieuvan.jpg";
 // icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 // type animation
@@ -9,6 +10,8 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
+// link
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -56,11 +59,16 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
+              className="mb-4 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              laudantium veniam reprehenderit molestiae numquam architecto sed
-              beatae blanditiis cupiditate odit.
+              Hello, and welcome to my online portfolio. My name is
+              <b> Tran Quang Tri</b>, and I'm a final-year student at
+              <b> International University (VNU-HCMC)</b> majoring in
+              <b> Information Technology</b>. I've created this platform to
+              showcase my work and share my journey as I continue to grow and
+              learn in my field of study. Please feel free to explore the
+              various projects, and don't hesitate to reach out if you have any
+              questions or if you'd like to collaborate on a project.
             </motion.p>
             {/* contact me */}
             <motion.div
@@ -68,20 +76,14 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max items-center mb-4 lg:mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max items-center mb-4 lg:mb-8 mx-auto lg:mx-0 text-text text-[20px] gap-x-6"
             >
-              <button to="contact" className="btn btn-lg">
-                Contact me
-              </button>
-            </motion.div>
-            {/* socials */}
-            <motion.div
-              variants={fadeIn("up", 0.7)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-text text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
-            >
+              <Link to="contact" activeClass="active" smooth={true} spy={true}>
+                <button to="contact" className="btn btn-lg">
+                  Contact me
+                </button>
+              </Link>
+              {/* socials */}
               <a href="https://github.com/WangTris" target="blank">
                 <FaGithub />
               </a>
@@ -106,7 +108,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[350px]"
           >
-            <img src={dieuvan} alt="" />
+            <img className="rounded-lg lg:height-[400px]" src={home} alt="" />
           </motion.div>
         </div>
       </div>

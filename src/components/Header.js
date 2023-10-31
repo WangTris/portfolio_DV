@@ -8,7 +8,12 @@ const Header = () => {
           <span className="text-text align-bottom font-primary font-semibold uppercasef text-[30px]">
             welcome to my portfolio
           </span>
-          <button className="btn btn-sm">Resume</button>
+          <a
+            href="../../public/resume/resume.pdf"
+            download="resume_TranQuangTri.pdf"
+          >
+            <button className="btn btn-sm">Resume</button>
+          </a>
         </div>
       </div>
     </header>
