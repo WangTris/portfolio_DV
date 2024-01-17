@@ -1,6 +1,6 @@
 import React from "react";
 //images
-import home from "../assets/img/home.JPG";
+import home from "../assets/img/dieuvan.jpg";
 //import dieuvan from "../assets/dieuvan.jpg";
 // icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
@@ -16,7 +16,7 @@ import { Link } from "react-scroll";
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[80vh] flex items-center"
+      className="flex min-h-[85vh] items-center lg:min-h-[80vh]"
       id="home"
     >
       <div className="container mx-auto">
@@ -28,25 +28,25 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-text text-[3rem] font-bold leading-[1] lg:text-[5rem]"
+              className="text-[3rem] font-bold uppercase leading-[1] text-text lg:text-[5rem]"
             >
-              TRAN QUANG <span>TRI</span>
+              nguyen dieu <span className="text-accent">van</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 font-secondary text-[36px] font-semibold uppercase leading-[1] lg:text-[60px]"
             >
-              <span className="text-text mr-4">I'm a</span>
+              <span className="mr-4 text-text">She's a</span>
               <TypeAnimation
                 sequence={[
-                  `Front-end Developer`,
+                  `Youtuber`,
                   2000,
-                  `Back-end Developer`,
+                  `Content Creator`,
                   2000,
-                  `Full-stack Developer`,
+                  `Influencer`,
                   2000,
                 ]}
                 wrapper="span"
@@ -59,16 +59,18 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 max-w-2xl mx-auto lg:mx-0 font-secondary text-[20px]"
+              className="mx-auto mb-4 max-w-2xl font-secondary text-[20px] lg:mx-0"
             >
-              Hello, and welcome to my online portfolio. My name is
+              Hello, and welcome. My name is
               <b> Tran Quang Tri</b>.
               <br />
               I've created this platform to showcase my work and share my
-              journey as I continue to grow and learn in my field of study.
-              Please feel free to explore the various projects, and don't
-              hesitate to reach out if you have any questions or if you'd like
-              to collaborate on a project.
+              journey as I continue to grow and learn in my field of study -
+              Information Technology.
+              <br />
+              Moreover, I want to express my love to her - Nguyen Dieu Van. She
+              is my light in the darkest day and my motivation to keep moving
+              forward.
             </motion.p>
             {/* contact me */}
             <motion.div
@@ -76,7 +78,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max items-center mb-4 lg:mb-8 mx-auto lg:mx-0 text-text text-[20px] gap-x-6"
+              className="mx-auto mb-4 flex max-w-max items-center gap-x-6 text-[20px] text-text lg:mx-0 lg:mb-8"
             >
               <Link to="contact" activeClass="active" smooth={true} spy={true}>
                 <button to="contact" className="btn btn-lg">
@@ -106,7 +108,7 @@ const Banner = () => {
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-[350px]"
+            className="hidden max-w-[350px] flex-1 lg:flex"
           >
             <img className="rounded-lg lg:h-[428px]" src={home} alt="" />
           </motion.div>

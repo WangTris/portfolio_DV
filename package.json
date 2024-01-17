@@ -40,6 +40,8 @@
   },
   "devDependencies": {
     "framer-motion": "^10.16.4",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "react-countup": "^6.4.2",
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^9.5.2",

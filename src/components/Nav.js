@@ -10,17 +10,17 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <nav className="fixed bottom-2 lg:bottom-4 w-full overflow-hidden z-50">
+    <nav className="fixed bottom-2 z-50 w-full overflow-hidden lg:bottom-4">
       <div className="container mx-auto">
         {/* Nav inner */}
-        <div className="w-full max-w-[460px] border-2 border-text bg-accent/15 h-[86px] backdrop-blur-2xl rounded-full mx-auto px-5 flex justify-between items-center text-text">
+        <div className="bg-accent/15 mx-auto flex h-[86px] w-full max-w-[460px] items-center justify-between rounded-full border-2 border-text px-5 text-text backdrop-blur-2xl">
           <Link
             to="home"
             activeClass="active"
             smooth={true}
             spy={true}
             offset={-200}
-            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
+            className="flex h-[50px] w-[50px] cursor-pointer items-center p-4"
           >
             <BiHomeAlt />
           </Link>
@@ -29,7 +29,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
+            className="flex h-[50px] w-[50px] cursor-pointer items-center p-4"
           >
             <BiUser />
           </Link>
@@ -38,7 +38,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
+            className="flex h-[50px] w-[50px] cursor-pointer items-center p-4"
           >
             <BsBriefcase />
           </Link>
@@ -56,7 +56,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
+            className="flex h-[50px] w-[50px] cursor-pointer items-center p-4"
           >
             <AiOutlineProject />
           </Link>
@@ -65,7 +65,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer p-4 w-[50px] h-[50px] flex items-center"
+            className="flex h-[50px] w-[50px] cursor-pointer items-center p-4"
           >
             <BsEnvelope />
           </Link>

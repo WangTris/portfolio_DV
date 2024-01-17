@@ -84,11 +84,11 @@ const Projs = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="text-[3rem] lg:text-[4rem] mt-8 text-center justify-between items-center font-primary font-bold uppercase text-text"
+        className="mt-8 items-center justify-between text-center font-primary text-[3rem] font-bold uppercase text-text lg:text-[4rem]"
       >
         projects
       </motion.h2>
-      <div className="text-text flex flex-row justify-center items-center gap-2 py-6">
+      <div className="flex flex-row items-center justify-center gap-2 py-6 text-text">
         {/* Tag */}
         <ProjectTag
           onClick={handleTagClick}
@@ -101,7 +101,7 @@ const Projs = () => {
           isSelected={selectedTag === "Web"}
         />
       </div>
-      <div className="container mx-auto grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="container mx-auto grid gap-8 md:grid-cols-3 md:gap-12">
         {/* projects */}
         {filteredProjects.map((project) => (
           <ProjectCard

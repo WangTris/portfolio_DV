@@ -14,9 +14,9 @@ const Header = () => {
   return (
     <header className="py-8">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <span className="text-text align-bottom font-primary font-semibold uppercasef text-[30px]">
-            welcome to my portfolio
+        <div className="flex items-center justify-between">
+          <span className="uppercasef align-bottom font-primary text-[30px] font-semibold text-text">
+            welcome to my website
           </span>
           <button onClick={onButtonClick} className="btn btn-sm">
             Resume

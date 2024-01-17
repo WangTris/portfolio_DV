@@ -4,17 +4,17 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div>
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
+        className="group relative h-52 rounded-t-xl md:h-72"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-text bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+        <div className="overlay absolute left-0 top-0 hidden h-full w-full items-center justify-center bg-text bg-opacity-0 transition-all duration-500 group-hover:flex group-hover:bg-opacity-80">
           {/* Code Bracket Icon */}
           <a
             href={gitUrl}
-            className="h-14 w-14 mr-12 border-2 relative rounded-full border-accent hover:border-white group/link"
+            className="group/link relative mr-12 h-14 w-14 rounded-full border-2 border-accent hover:border-white"
           >
             <svg
-              className="text-center w-8 h-8 text-accent absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white"
+              className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer text-center text-accent group-hover/link:text-white"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -31,10 +31,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           {/* Eye Icon */}
           <a
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-accent hover:border-white group/link"
+            className="group/link relative h-14 w-14 rounded-full border-2 border-accent hover:border-white"
           >
             <svg
-              className="text-center w-8 h-8 text-accent absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white"
+              className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer text-center text-accent group-hover/link:text-white"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </a>
         </div>
       </div>
-      <div className="text-text rounded-b-xl mt-3 bg-textpy-6 px-4">
+      <div className="bg-textpy-6 mt-3 rounded-b-xl px-4 text-text">
         <h5 className="text-xl font-semibold">{title}</h5>
         <p className="text-accent">{description}</p>
       </div>

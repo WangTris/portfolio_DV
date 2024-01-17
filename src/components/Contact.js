@@ -27,7 +27,7 @@ const Contact = () => {
         "service_y52n5sd",
         "template_2g2y6i6",
         form.current,
-        "tOaOobCfLPs96OjAz"
+        "tOaOobCfLPs96OjAz",
       )
       .then(
         (result) => {
@@ -40,7 +40,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
@@ -48,48 +48,48 @@ const Contact = () => {
     <section className="section flex flex-1 flex-col" id="contact">
       {/* projects */}
       <div className="container mx-auto">
-        <div className="flex flex-col justify-center items-center lg:flex-row">
+        <div className="flex flex-col items-center justify-center lg:flex-row">
           {/* text */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="w-[100%] lg:w-[50%] flex flex-col"
+            className="flex w-[100%] flex-col lg:w-[50%]"
           >
-            <h4 className="text-2xl font-primary uppercase text-accent font-medium mb-2 tracking-wide">
+            <h4 className="mb-2 font-primary text-2xl font-medium uppercase tracking-wide text-accent">
               Contact
             </h4>
-            <h2 className="text-[30px] lg:text-[50px] text-text font-secondary font-bold leading-none mb-12">
+            <h2 className="mb-12 font-secondary text-[30px] font-bold leading-none text-text lg:text-[50px]">
               Don't be shy! Hit me up!
             </h2>
             {/* Contact icon */}
-            <div className="flex flex-row items-center gap-6 mb-4">
-              <span className="w-12 h-12 bg-accent/20 flex justify-center items-center rounded-full">
-                <AiOutlineMail className="w-8 h-8" />
+            <div className="mb-4 flex flex-row items-center gap-6">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <AiOutlineMail className="h-8 w-8" />
               </span>
               <div>
-                <h3 className="font-semibold font-tertiary">Mail</h3>
+                <h3 className="font-tertiary font-semibold">Mail</h3>
                 <a href="mailto:tranquangtri2002@gmail.com">
                   tranquangtri2002@gmail.com
                 </a>
               </div>
             </div>
-            <div className="flex flex-row items-center gap-6 mb-4">
-              <span className="w-12 h-12 bg-accent/20 flex justify-center items-center rounded-full">
-                <AiOutlinePhone className="w-8 h-8" />
+            <div className="mb-4 flex flex-row items-center gap-6">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <AiOutlinePhone className="h-8 w-8" />
               </span>
               <div>
-                <h3 className="font-semibold font-tertiary">Phone</h3>
+                <h3 className="font-tertiary font-semibold">Phone</h3>
                 <a href="tel:+84839682239">(+84) 83 968 2239</a>
               </div>
             </div>
-            <div className="flex flex-row items-center gap-6 mb-4">
-              <span className="w-12 h-12 bg-accent/20 flex justify-center items-center rounded-full">
-                <TbMapPin2 className="w-8 h-8" />
+            <div className="mb-4 flex flex-row items-center gap-6">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
+                <TbMapPin2 className="h-8 w-8" />
               </span>
               <div>
-                <h3 className="font-semibold font-tertiary">Location</h3>
+                <h3 className="font-tertiary font-semibold">Location</h3>
                 <a
                   href="https://maps.app.goo.gl/KLUASFQuDcpPLi4t8"
                   target="_blank"
@@ -99,13 +99,13 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="flex text-text text-[2rem] mt-4 gap-x-8 max-w-max mx-auto lg:mx-0 text-center lg:text-left">
-              <span className="w-12 h-12 flex justify-center items-center">
+            <div className="mx-auto mt-4 flex max-w-max gap-x-8 text-center text-[2rem] text-text lg:mx-0 lg:text-left">
+              <span className="flex h-12 w-12 items-center justify-center">
                 <a href="https://github.com/WangTris" target="blank">
                   <FaGithub />
                 </a>
               </span>
-              <span className="w-12 h-12 flex justify-center items-center">
+              <span className="flex h-12 w-12 items-center justify-center">
                 <a
                   href="https://www.linkedin.com/in/quang-tr%C3%AD-tr%E1%BA%A7n-21740020a/"
                   target="blank"
@@ -113,7 +113,7 @@ const Contact = () => {
                   <FaLinkedin />
                 </a>
               </span>
-              <span className="w-12 h-12 flex justify-center items-center">
+              <span className="flex h-12 w-12 items-center justify-center">
                 <a
                   href="https://www.facebook.com/tranquangtri0412"
                   target="blank"
@@ -132,26 +132,26 @@ const Contact = () => {
             action=""
             ref={form}
             onSubmit={sendEmail}
-            className="w-[100%] lg:w-[50%] flex-1 border border-text rounded-2xl flex flex-col pb-[4.5rem] p-6 items-start"
+            className="flex w-[100%] flex-1 flex-col items-start rounded-2xl border border-text p-6 pb-[4.5rem] lg:w-[50%]"
           >
             <input
               type="text"
               name="from_name"
               placeholder="Your name"
-              className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              className="w-full border-b bg-transparent py-4 outline-none transition-all placeholder:text-text focus:border-text"
               required
             />
             <input
               type="email"
               name="email_id"
               placeholder="Your email"
-              className="bg-transparent border-b py-4 outline-none w-full placeholder:text-text focus:border-text transition-all"
+              className="w-full border-b bg-transparent py-4 outline-none transition-all placeholder:text-text focus:border-text"
               required
             />
             <textarea
               name="message"
               placeholder="Your message"
-              className="bg-transparent border-b py-12 outline-none w-full placeholder:text-text focus:border-text transition-all resize-none mb-12"
+              className="mb-12 w-full resize-none border-b bg-transparent py-12 outline-none transition-all placeholder:text-text focus:border-text"
               required
             ></textarea>
             <button className="btn btn-lg" type="submit" value="Send">
